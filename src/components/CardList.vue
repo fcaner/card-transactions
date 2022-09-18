@@ -2,9 +2,9 @@
     <div className="cardsAndTransactions">
         <div :class="mobile ? 'mobileCard' : 'desktopCard'">
             <img class="image" :class="selectedIndex===0 ?'active' : 'notActive'" @click="onCardClick(0)" alt=""
-                src="../assets/DKBDebit.png">
+                src="../assets/Debit.jpeg">
             <img class="image" :class="selectedIndex===1 ?'active' : 'notActive'" @click="onCardClick(1)" alt=""
-                src="../assets/DKBKredit.png">
+                src="../assets/Kredit.jpeg">
         </div>
         <div v-if="showTransaction">
             <TransactionList :cardId="this.selectedCardId" :clickedIndex="selectedIndex" />
